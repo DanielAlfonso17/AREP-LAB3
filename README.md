@@ -37,5 +37,6 @@ Los archivos que podemos solicitar a este webServer son los siguientes:
 - index1.html
 - prueba.html
 - paginaEscuela.html
+
 Podremos observar que cualquier archivo que solicitemos y no este en la lista anterior, nos devolvera un error 404 Not Found. Si deseamos agregar mas archivos, podremos hacerlo 
 localmente añadiendo las fuentes html,css,js, png o jpg al directorio estatico del proyecto: src/main/resources
