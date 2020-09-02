@@ -29,6 +29,11 @@ mvn javadoc:javadoc
 ~~~
 El archivo de documentación se encuentra en la raiz del repositorio con nombre Documentacion.html
 
+Podemos ejecutar localmente nuestro proyecto con el siguiente comando en consola: 
+~~~
+java -cp .\target\classes\ edu.escuelaing.arep.tallerservidorcliente.httpServer.HttpServer
+~~~
+![img](./Pantallazos/0.PNG)
 Los archivos que podemos solicitar a este webServer son los siguientes:
 - bart.jpg
 - imagen.jpg
@@ -40,3 +45,14 @@ Los archivos que podemos solicitar a este webServer son los siguientes:
 
 Podremos observar que cualquier archivo que solicitemos y no este en la lista anterior, nos devolvera un error 404 Not Found. Si deseamos agregar mas archivos, podremos hacerlo 
 localmente añadiendo las fuentes html,css,js, png o jpg al directorio estatico del proyecto: src/main/resources
+
+Como no estamos solicitando en la URL ningun archivo que exista, entonces nos mandara error 404 
+![img](./Pantallazos/1.PNG)
+
+![img](./Pantallazos/2.PNG)
+
+![img](./Pantallazos/3.PNG)
+
+![img](./Pantallazos/4.PNG)
+
+![img](./Pantallazos/5.PNG)
