@@ -56,3 +56,7 @@ Como no estamos solicitando en la URL ningun archivo que exista, entonces nos ma
 ![img](./Pantallazos/4.PNG)
 
 ![img](./Pantallazos/5.PNG)
+
+![img](./Pantallazos/6.PNG)
+
+Como podemoso observar los archivos web html, las imagenes, los js y archivos de estilos css se renderizan de manera correcta 
