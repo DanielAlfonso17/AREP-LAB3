@@ -23,8 +23,9 @@ public class HttpServer {
 
     public static void main(String[] args) throws IOException {
         ServerSocket serverSocket = null;
+        int puerto = getPort();
         try {
-            serverSocket = new ServerSocket(36000);
+            serverSocket = new ServerSocket(puerto);
         } catch (IOException e) {
             System.err.println("Could not listen on port: 35000.");
             System.exit(1);
@@ -79,5 +80,12 @@ public class HttpServer {
         String path = "/src/main/resources/" + archivoSolicitud[0];
         FileReader archivo = new FileReader(path);
         archivo.getFile(clientSocket);
+    }
+
+    static int getPort() {
+        if (System.getenv("PORT") != null) {
+            return Integer.parseInt(System.getenv("PORT"));
+        }
+        return 35000; //returns default port if heroku-port isn't set(i.e. on localhost)
     }
 }
